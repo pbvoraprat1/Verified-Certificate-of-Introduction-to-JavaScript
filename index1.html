@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper to Tree Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Paper to Tree Calculator</h1>
+        <p class="subtitle">คำนวณจำนวนต้นไม้ที่ต้องปลูกเพื่อชดเชยการใช้กระดาษของคุณ</p>
+        
+        <div class="input-group">
+            <label for="paperInput">กรอกจำนวนกระดาษที่ใช้ (แผ่น):</label>
+            <input type="number" id="paperInput" placeholder="ตัวอย่าง: 500" min="0">
+        </div>
+
+        <button onclick="calculateTrees()" id="calcBtn">คำนวณจำนวนต้นไม้</button>
+        
+        <div id="resultCard" class="result-card hidden">
+            <h2 id="resultText">ผลการคำนวณจะแสดงที่นี่</h2>
+        </div>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>
